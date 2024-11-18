@@ -24,23 +24,23 @@ export const useCalendarDays = () => {
     i++
   ) {
     prevDays.push({
-      id: `${i}-${monthValue == 0 ? 11 : monthValue - 1}-${
-        monthValue == 0 ? yearValue - 1 : yearValue
-      }`,
+      id: `${monthValue == 0 ? yearValue - 1 : yearValue}-${
+        monthValue == 0 ? 11 : monthValue - 1
+      }-${i}`,
       name: `${i}`,
     });
   }
   for (let i = 1; i <= countDaysOfMonth; i++) {
     currentDays.push({
-      id: `${i}-${monthValue}-${yearValue}`,
+      id: `${yearValue}-${monthValue}-${i}`,
       name: `${i}`,
     });
   }
   for (let i = 1; i < nextMonthDays; i++) {
     nextDays.push({
-      id: `${i}-${monthValue == 11 ? 0 : monthValue + 1}-${
-        monthValue == 11 ? yearValue + 1 : yearValue
-      }`,
+      id: `${monthValue == 11 ? yearValue + 1 : yearValue}-${
+        monthValue == 11 ? 0 : monthValue + 1
+      }-${i}`,
       name: `${i}`,
     });
   }

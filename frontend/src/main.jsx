@@ -6,6 +6,15 @@ import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ReservationList } from "./Components/ReservationList.jsx/ReservationList.jsx";
 import { Calendar } from "./Components/Calendar/Calendar.jsx";
+function fetchItemToCalendar() {
+  return fetch("http://localhost:3000/reservation", {
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+  }).then((response) => response.json());
+  // .then((json) => json);
+}
 const router = createBrowserRouter([
   {
     path: "/",
@@ -14,6 +23,7 @@ const router = createBrowserRouter([
       {
         path: "calendar",
         element: <Calendar />,
+        loader: fetchItemToCalendar,
       },
       {
         path: "reservation",

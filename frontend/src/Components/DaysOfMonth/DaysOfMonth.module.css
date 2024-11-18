@@ -3,36 +3,53 @@
   grid-template-columns: subgrid;
   gap: 1rem;
   grid-column: -1 / 1;
+  max-width: 50vh;
 }
 .dayNames {
   display: grid;
   grid-column: 1 / -1;
   grid-template-columns: subgrid;
+  text-align: center;
 }
 .currentday {
-  background-color: green;
-  width: 40px;
-  height: 40px;
-  color: #fff;
+  border: 1px solid #333;
+  aspect-ratio: 1/1;
+  height: 100%;
   font-size: 2rem;
 }
 .prevday {
-  background-color: red;
+  border: 1px solid #ddd;
   opacity: 0.7;
-  width: 40px;
-  height: 40px;
-  color: #fff;
+  aspect-ratio: 1/1;
+  height: 100%;
   font-size: 2rem;
 }
 .nextday {
-  background-color: blue;
+  border: 1px solid #ddd;
   opacity: 0.7;
-  width: 40px;
-  height: 40px;
-  color: #fff;
+  aspect-ratio: 1/1;
+  height: 100%;
   font-size: 2rem;
+}
+.nextday,
+.currentday,
+.prevday {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 .dayswrapper {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
+  max-width: 80vh;
+  margin: 0 auto;
+}
+.hourItem {
+  font-size: 0.7rem;
+  background-color: #333;
+  color: #fff;
+  padding: 0.3rem 0.2rem;
+  position: absolute;
+  top: 10px;
 }
