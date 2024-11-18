@@ -1,0 +1,16 @@
+.aside {
+  background-color: var(--five-color);
+  width: 300px;
+  height: 100vh;
+  color: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  padding: 30px 15px;
+}
+.ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.li {
+  font-size: 1.8rem;
+}

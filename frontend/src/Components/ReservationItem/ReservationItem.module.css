@@ -1,0 +1,14 @@
+.reservationItem {
+  box-shadow: var(--box-shadow);
+  color: #333;
+  padding: var(--content-padding);
+  border: 1px solid #333;
+  transition: 0.3s;
+}
+.happened {
+  opacity: 0.3;
+  border-color: transparent;
+  &:hover {
+    opacity: 1;
+  }
+}

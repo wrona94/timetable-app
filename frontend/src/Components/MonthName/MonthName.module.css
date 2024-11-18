@@ -1,0 +1,11 @@
+.titlewrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 6rem;
+}
+.button {
+  padding: 1rem;
+  cursor: pointer;
+}

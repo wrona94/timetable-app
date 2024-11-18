@@ -1,0 +1,5 @@
+.content {
+  padding: 30px 15px;
+  flex-grow: 1;
+  height: 100vh;
+}

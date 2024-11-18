@@ -1,0 +1,38 @@
+.dayslist {
+  display: grid;
+  grid-template-columns: subgrid;
+  gap: 1rem;
+  grid-column: -1 / 1;
+}
+.dayNames {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: subgrid;
+}
+.currentday {
+  background-color: green;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  font-size: 2rem;
+}
+.prevday {
+  background-color: red;
+  opacity: 0.7;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  font-size: 2rem;
+}
+.nextday {
+  background-color: blue;
+  opacity: 0.7;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  font-size: 2rem;
+}
+.dayswrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}

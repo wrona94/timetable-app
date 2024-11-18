@@ -1,0 +1,212 @@
+:root {
+  --primary-color: #0e593e;
+  --secondary-color: #d9a13b;
+  --third-color: #bf7315;
+  --four-color: #735145;
+  --five-color: #f2f2f2;
+  --text-color: #000;
+  --text-secondary-color: #333;
+  --hover-color: var(--secondary-color);
+  --border-color: #ddd;
+  --background-color: #fff;
+  --background-color-secondary: #f8f8f8;
+  --box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  --content-padding: 0 15px;
+  --content-padding-md: 0 30px;
+  --headline-margin: 5rem 0;
+  --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+}
+p,
+span,
+a {
+  line-height: 1.4;
+}
+p {
+  margin: 1rem 0;
+}
+a {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: 0.3s;
+}
+a:hover {
+  color: var(--hover-color);
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+h1,
+h2,
+h3,
+h4 {
+  text-align: left;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.6rem;
+}
+body {
+  overflow-x: hidden;
+  overflow-y: visible;
+  text-align: justify;
+}
+main {
+  padding: 0 15px;
+  max-width: 1600px;
+  margin: 0 auto;
+}

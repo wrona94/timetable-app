@@ -1,0 +1,8 @@
+.reservationList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+.h1 {
+  grid-column: 1/4;
+}
